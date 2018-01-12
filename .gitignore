@@ -2,3 +2,8 @@
 phpunit.xml
 composer.lock
 vendor/
+
+# Developer
+.project
+.settings
+.idea
