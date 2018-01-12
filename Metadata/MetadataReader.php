@@ -78,10 +78,10 @@ class MetadataReader
      *
      * @throws MappingNotFoundException
      */
-    public function getUploadableFields(string $class, string $mapping = null): array
+    public function getUploadableFields($class, $mapping = null)
     {
         if (null === $metadata = $this->reader->getMetadataForClass($class)) {
-            throw MappingNotFoundException::createNotFoundForClass($mapping ?? '', $class);
+            throw MappingNotFoundException::createNotFoundForClass($mapping ?: '', $class);
         }
         $uploadableFields = [];
 

@@ -28,7 +28,7 @@ class MappingDebugClassCommand extends Command
         ;
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output): int
+    protected function execute(InputInterface $input, OutputInterface $output)
     {
         $fqcn = $input->getArgument('fqcn');
 

@@ -230,7 +230,7 @@ class VichUploaderExtension extends Extension
         $container->setParameter('twig.form.resources', $resources);
     }
 
-    private function getDefinitionClassname(): string
+    private function getDefinitionClassname()
     {
         return class_exists(ChildDefinition::class) ? ChildDefinition::class : DefinitionDecorator::class;
     }
