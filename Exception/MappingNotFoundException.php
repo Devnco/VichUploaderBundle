@@ -11,7 +11,7 @@ class MappingNotFoundException extends \RuntimeException
         );
     }
 
-    public static function createNotFoundForClass(string $mapping, string $class): self
+    public static function createNotFoundForClass(string $mapping, string $class)
     {
         if ('' === $mapping) {
             return new self(
